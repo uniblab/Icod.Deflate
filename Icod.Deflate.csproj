@@ -1,4 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
+	<!--
+        Deflate.exe compresses files using the Deflate compression algorithm.
+        Copyright (C) 2023 Timothy J. Bruce
+	-->
 
   <PropertyGroup>
     <RootNamespace>Icod.Deflate</RootNamespace>
