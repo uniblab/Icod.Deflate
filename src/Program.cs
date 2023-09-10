@@ -26,10 +26,6 @@ namespace Icod.Deflate {
 
 		[System.STAThread]
 		public static System.Int32 Main( System.String[] args ) {
-			if ( null == args ) {
-				PrintUsage();
-				return 1;
-			}
 			var len = args.Length;
 			if ( len <= 0 ) {
 				PrintUsage();
@@ -39,10 +35,10 @@ namespace Icod.Deflate {
 				return 1;
 			}
 			System.String inputPathName = args[ 0 ];
-			if ( new System.String[]{ "--help", "-h", "/h" }.Contains( inputPathName, System.StringComparer.OrdinalIgnoreCase ) ) {
+			if ( new System.String[] { "-h", "--help", "/help" }.Contains( inputPathName, System.StringComparer.OrdinalIgnoreCase ) ) {
 				PrintUsage();
 				return 1;
-			} else if ( new System.String[] { "--copyright", "-c", "/c" }.Contains( inputPathName, System.StringComparer.OrdinalIgnoreCase ) ) {
+			} else if ( new System.String[] { "-c", "--copyright", "/copyright" }.Contains( inputPathName, System.StringComparer.OrdinalIgnoreCase ) ) {
 				PrintCopyright();
 				return 1;
 			}
