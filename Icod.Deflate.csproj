@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<!--
         Deflate.exe compresses files using the Deflate compression algorithm.
-        Copyright (C) 2023 Timothy J. Bruce
+        Copyright (C) 2025 Timothy J. Bruce
 	-->
 
   <PropertyGroup>
@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Icod.Argh" Version="1.1.1" />
+    <PackageReference Include="Icod.Argh" Version="1.1.2" />
   </ItemGroup>
 
 </Project>
